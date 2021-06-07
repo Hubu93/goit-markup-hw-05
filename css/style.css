@@ -133,11 +133,11 @@ body {
 .active::after {
   content: "";
   display: block;
-  height: 5px;
+  height: 4px;
   width: 100%;
   background: #2196F3;
   position: absolute;
-  bottom: -31px;
+  bottom: -32px;
   border-radius: 2px;
 }
 
