@@ -130,8 +130,23 @@ body {
   letter-spacing: 0.02em;
 }
 
+.active::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background: #2196F3;
+  position: absolute;
+  bottom: -31px;
+  border-radius: 2px;
+}
+
 .navigation-menu-item:not(:last-child) {
   margin-right: 40px;
+}
+
+.navigation-menu-item {
+  position: relative;
 }
 
 .navigation-menu-link:hover,
@@ -378,12 +393,12 @@ overflow: hidden;
   color: #212121;
 }
 
-/* .portfolio-list-img-wrapper {
+.portfolio-list-img-wrapper {
   position: relative;
   overflow: hidden;
-} */
+}
 
-/* .overlay {
+.overlay {
   position: absolute;
   color: #FFFFFF;
   padding: 63px 24px;
@@ -397,12 +412,12 @@ overflow: hidden;
   overflow: auto;
   transform: translateY(100%);
   transition: transform 250ms linear;
-} */
+} 
 
-/* .portfolio-listwork-list-link:hover .overlay,
+.portfolio-listwork-list-link:hover .overlay,
 .portfolio-listwork-list-link:focus .overlay {
   transform: translateY(0%);
-} */
+}
 
 .team-list-item-convert {
   padding-top: 30px;
